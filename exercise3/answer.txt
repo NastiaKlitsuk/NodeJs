@@ -1,1 +1,2 @@
-4 requests completed at the same time.
+4 requests completed at the same time, 
+because there are 4 workers that process at the same time.

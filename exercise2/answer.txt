@@ -1,1 +1,1 @@
-Only 1 request completed at the same time.
+Only 1 request completed at the same time, because sleep blocks the event loop.

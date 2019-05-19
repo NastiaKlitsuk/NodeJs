@@ -1,17 +1,8 @@
-const http = require('http');
+const utils = require('../utils');
 
 for (let i = 0; i < 10; i++) {
-  http.get('http://localhost:8001', resp => {
-    let data = '';
-
-    resp.on('data', chunk => {
-      data += chunk;
-    });
-
-    resp.on('end', () => {
-      console.log(
-        `Client call number ${i} completed with data: ${data}. ${new Date()}`
-      );
-    });
-  });
+  utils.getAsync(
+    'http://localhost:8001',
+    `Client call number ${i} completed.`
+  );
 }

@@ -1,3 +1,4 @@
 1) The requests are processed sequentially.
-2) The client call completion callbacks executed after the execution of all the 10 client requests
+2) The client call completion callbacks executed after the execution of all the 10 client requests, 
+   because there is only one session, so there is one event loop.
   2.1) At around the same time occur 2 callbacks.
