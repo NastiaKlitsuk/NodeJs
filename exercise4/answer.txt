@@ -1,0 +1,3 @@
+All the 10 requests are completed at the same time,
+because every worker creates a new 'calcsum' process for every request,
+so 10 requests are processed concurrently.
