@@ -16,7 +16,6 @@ if (cluster.isMaster) {
       calcSumProcess.send({ x, y });
 
       calcSumProcess.on('message', calcSumResult => {
-        console.log('Message from child', calcSumResult);
         res.writeHead(200);
         res.end(`${calcSumResult.sum}\n`);
       });
