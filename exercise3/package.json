@@ -1,0 +1,13 @@
+{
+  "name": "exercise3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "node client.js",
+    "server": "node server2.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

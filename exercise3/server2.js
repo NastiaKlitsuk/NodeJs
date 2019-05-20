@@ -10,7 +10,7 @@ if (cluster.isMaster) {
       utils.sleep(2000);
       res.writeHead(200);
       res.end('ok\n');
-      console.log(`[WORKER ${process.env.workerId}] has finished at ${new Date()}`);
+      console.log(`[WORKER ${process.env.workerId}] has finished at ${utils.getCurrentFormattedDate()}`);
     })
     .listen(8000);
 
